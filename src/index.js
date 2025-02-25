@@ -36,6 +36,7 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline.js';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount.js';
 import SpecialCharacters from '@ckeditor/ckeditor5-special-characters/src/specialcharacters';
+import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
 import emojies from './emojies';
 
 function SpecialCharactersEmoji(editor) {
@@ -83,6 +84,7 @@ Editor.builtinPlugins = [
 	TextTransformation,
 	Underline,
 	WordCount,
+	RemoveFormat,
   SpecialCharacters,
   SpecialCharactersEmoji
 ];
@@ -112,6 +114,7 @@ Editor.defaultConfig = {
 			'insertTable',
 			'htmlEmbed',
 			'imageInsert',
+			'removeFormat',
       'specialCharacters',
 		]
 	},
